@@ -3,67 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Landing Page</title>
+    <title>Ronald - FullStack Dev</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
 </head>
-<body>    
-        <nav>
-          <button class="btn-shine">
-            <span>Home</span>
-        </button>
-        <button class="btn-shine">
-          <span>About</span>
-      </button>
-      <button class="btn-shine">
-        <span>Projects</span>
-    </button>
-    <button class="btn-shine">
-      <span>Contact</span>
-  </button>
-       </nav>
-    <main>
+<body>
+    <nav>
+        <a href="#home" class="btn-shine"><span>Home</span></a>
+        <a href="#about" class="btn-shine"><span>About</span></a>
+        <a href="#skills" class="btn-shine"><span>Skills</span></a>
+        <a href="#projects" class="btn-shine"><span>Projects</span></a>
+        <a href="#socials" class="btn-shine"><span>Contact</span></a>
+    </nav>
+
+    <main id="home">
         <h1>Hi, I'm Ronald, FullStack Developer</h1>
         <p>Hello! I'm Ronald, a passionate software developer focused on creating impactful solutions.<br> My journey in programming began with a drive to innovate and solve real-world challenges.</p>
-        <button class="button" id="learnMore">Learn more</button>
-        <button class="button2" id="contactMe" onclick="abrirWhatsApp()">Contact Us</button>
+        <button class="button" id="learnMore">Learn More</button>
+        <button class="button2" id="contactMe" onclick="abrirWhatsApp()">Contact Me</button>
+        <a href="https://wa.me/5541987828512" target="_blank" class="social-wa-link"></a>
+        <div class="arrowContainer">
+            <svg width="25" height="25" viewBox="0 0 45 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M43.7678 20.7678C44.7441 19.7915 44.7441 18.2085 43.7678 17.2322L27.8579 1.32233C26.8816 0.34602 25.2986 0.34602 24.3223 1.32233C23.346 2.29864 23.346 3.88155 24.3223 4.85786L38.4645 19L24.3223 33.1421C23.346 34.1184 23.346 35.7014 24.3223 36.6777C25.2986 37.654 26.8816 37.654 27.8579 36.6777L43.7678 20.7678ZM0 21.5L42 21.5V16.5L0 16.5L0 21.5Z" fill="#b19cd9"></path>
+            </svg>
+        </div>
+        <img src="assets/img/Ronald .jpg" alt="Ronald" class="img-home">
+    </main>
 
-        
-            <div class="arrowContainer">
-              <svg
-                width="25"
-                height="25"
-                viewBox="0 0 45 38"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M43.7678 20.7678C44.7441 19.7915 44.7441 18.2085 43.7678 17.2322L27.8579 1.32233C26.8816 0.34602 25.2986 0.34602 24.3223 1.32233C23.346 2.29864 23.346 3.88155 24.3223 4.85786L38.4645 19L24.3223 33.1421C23.346 34.1184 23.346 35.7014 24.3223 36.6777C25.2986 37.654 26.8816 37.654 27.8579 36.6777L43.7678 20.7678ZM0 21.5L42 21.5V16.5L0 16.5L0 21.5Z"
-                  fill="black"
-                ></path>
-              </svg>
-            </div>
-          </button>
-    </main>
-    <main>
-        <img src="assets/img/Ronald .jpg" alt="Home" class="img-home">
-    </main>
-    <div class="about">
-       <div class="sobre-mim">
-        <h2>About Me</h2>
-        <p>I am a Software Engineering student at UniBrasil University. I have experience in Python and C# programming languages and have worked with SQL queries. I also have knowledge of HTML, CSS, and JavaScript. I am always eager to take on new challenges.</p>
-       </div>
-       <div>
-        <button class="ui-btn" onclick="baixarCurriculo()">
-          <span>Download CV</span>
-        </button>        
-        </a>
-       </div>
+    <section id="about" class="about">
+        <div class="sobre-mim">
+            <h2>About Me</h2>
+            <p>I am a Software Engineering student at UniBrasil University. I have experience in Python and C# programming languages and have worked with SQL queries. I also have knowledge of HTML, CSS, and JavaScript. I am always eager to take on new challenges.</p>
+        </div>
+        <div>
+            <button class="download-btn" onclick="baixarCurriculo()">
+                <span>Download CV</span>
+            </button>
+        </div>
         <img src="assets/img/logo.png" alt="Logo" class="anime">
-    </div>    
+    </section>
 
-    <script src="assets/node.js"></script> 
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <img src="assets/img/python.png" alt="Python" class="skill-logo">
+                <span>Python</span>
+            </div>
+            <div class="skill-card">
+                <img src="assets/img/do-sustenido.png" alt="C#" class="skill-logo">
+                <span>C#</span>
+            </div>
+            <div class="skill-card">
+                <img src="assets/img/servidor-sql.png" alt="SQL" class="skill-logo">
+                <span>SQL</span>
+            </div>
+            <div class="skill-card">
+                <img src="assets/img/html-5.png" alt="HTML" class="skill-logo">
+                <span>HTML</span>
+            </div>
+            <div class="skill-card">
+                <img src="assets/img/css.png" alt="CSS" class="skill-logo">
+                <span>CSS</span>
+            </div>
+            <div class="skill-card">
+                <img src="assets/img/js.png" alt="JavaScript" class="skill-logo">
+                <span>JavaScript</span>
+            </div>
+            <div class="skill-card">
+                <img src="assets/img/php.png" alt="PHP" class="skill-logo">
+                <span>PHP</span>
+            </div>
+            <div class="skill-card">
+                <img src="assets/img/biblioteca.png" alt="React" class="skill-logo">
+                <span>React</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <a href="../projects/Dashboard/index.html" target="_blank">
+                        <img src="assets/img/Captura de tela1.png" alt="Dashboard" class="project-img">
+                        <h3>Dashboard</h3>
+                        <p>Esta aplicação é um Dashboard administrativo.</p>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="../projects/Dashboard/financeflow/index.html" target="_blank">
+                        <img src="assets/img/Captura de tela2.png" alt="FinanceFlow" class="project-img">
+                        <h3>FinanceFlow</h3>
+                        <p>App de controle financeiro com gráficos e exportação de PDF.</p>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="projects/rastreamento/index.html" target="_blank">
+                        <img src="assets/img/captura de tela3.jpg" alt="Rastreamento" class="project-img">
+                        <h3>Rastreamento</h3>
+                        <p>Sistema de rastreamento de bobinas para uso corporativo (100% funcional).</p>
+                    </a>
+                </div>
+            </div>
+            <button class="carousel-btn prev">❮</button>
+            <button class="carousel-btn next">❯</button>
+        </div>
+    </section>
+
+    <section id="socials" class="socials">
+        <h2>Connect With Me</h2>
+        <div class="socials-container">
+            <a href="https://wa.me/5541987828512" target="_blank" class="social-link">
+                <img src="assets/img/icons8-whatsapp-48.png" alt="WhatsApp" class="social-icon">
+                <span>WhatsApp</span>
+            </a>
+            <a href="https://instagram.com/seu_usuario" target="_blank" class="social-link">
+                <img src="assets/img/icons8-instagram-48.png" alt="Instagram" class="social-icon">
+                <span>Instagram</span>
+            </a>
+            <a href="https://linkedin.com/in/seu_usuario" target="_blank" class="social-link">
+                <img src="assets/img/icons8-linkedin-48.png" alt="LinkedIn" class="social-icon">
+                <span>LinkedIn</span>
+            </a>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>Contact me via WhatsApp or download my CV above!</p>
+    </footer>
+
+    <script src="assets/script.js"></script>
 </body>
 </html>
